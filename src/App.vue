@@ -1,12 +1,26 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <app-layoute>
+    <router-view />
+  </app-layoute>
 </template>
+<script>
+import AppLayoute from "@/components/AppLayoute";
+export default {
+  components: {
+    AppLayoute,
+  },
+};
+</script>
 
 <style lang="scss">
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: linear-gradient(#1a0817, #050510);
+  min-height: 100vh;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
